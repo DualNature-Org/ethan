@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../images/logo.jpg'; 
+import {Link} from 'react-router-dom';
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
@@ -20,10 +21,10 @@ function Navbar() {
           </button>
         </div>
         <ul className={`flex ${showLinks ? 'flex-col' : 'hidden'} sm:flex sm:justify-center sm:items-center sm:flex-wrap`}>
-        <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><a href="/aboutus">aboutus</a></li>
-          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><a href="/blog">blog</a></li>
+        <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><Link to="/aboutus">aboutus</Link></li>
+          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><Link to="/blog">blog</Link></li>
           <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>courses</li>
-          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'> <a href="/admission">admission</a></li>
+          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'> <Link to="/admission">admission</Link></li>
         </ul>
       </nav>
     </div>
