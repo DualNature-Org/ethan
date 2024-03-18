@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Banner from "../images/Admissionbanner.png";
+// import Banner from "../images/Admissionbanner.png";
 import Callback from "../images/Callback.png";
 import Reveal, { AttentionSeeker, Flip } from 'react-awesome-reveal';
 
@@ -79,7 +79,7 @@ function Admission() {
       )}
       <div className=' bg-blue-300 rounded-lg w-screen flex flex-col justify-center p-5 items-center md:flex-row justify-around md:w-full'>
         <div className='flex flex-col justify-center items-center'>
-          <img src={Callback} className='w-[10rem] h-[10rem] rounded-full md:w-[20rem] md:h-[20rem]' />
+          <img src={Callback} className='w-[10rem] h-[10rem] rounded-full md:w-[20rem] md:h-[20rem]' alt=''/>
           <h1 className='font-bold text-lg text-center bg-white rounded-lg p-2 m-3 md:text-xl'>Request a callback from us. </h1>
         </div>
         <Flip triggerOnce>

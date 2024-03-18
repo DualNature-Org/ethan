@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Banner2 from '../images/student/student2.png';
 import Coma from '../images/coma.png';
-import { Fade, Slide, Reveal, AttentionSeeker } from 'react-awesome-reveal';
+import { Reveal, AttentionSeeker } from 'react-awesome-reveal';
 import Faq from '../components/Faq';
 
 function Main() {

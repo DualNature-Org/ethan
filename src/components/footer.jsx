@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from "../images/logo.jpg";
-import { CiFacebook, CiGps, CiHome, CiInstagram, CiPhone, CiTwitter } from "react-icons/ci";
+import { CiFacebook, CiHome, CiInstagram, CiPhone, CiTwitter } from "react-icons/ci";
 
 function Footer() {
     return (

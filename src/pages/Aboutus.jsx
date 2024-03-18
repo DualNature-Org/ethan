@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Banner from '../images/aboutbanner.png'
+// import Banner from '../images/aboutbanner.png'
 import FacultySection from '../components/Facultysection';
 import GallerySection from '../components/Gallery';
 

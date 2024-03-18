@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import Banner2 from "../images/cutekid.png";
 import { Flip } from 'react-awesome-reveal';
 
 const GallerySection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [autoplay, setAutoplay] = useState(true);
+  // const [autoplay, setAutoplay] = useState(true);
 
   const sliderPhotos = [
     { src: require('../images/infrastructure/infra1-min.png'), alt: 'Image 1' },
@@ -27,14 +27,14 @@ const GallerySection = () => {
     { src: require('../images/student/student6.png'), alt: 'Student 6' }
   ];
 
-  useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(() => {
-        setCurrentSlide((currentSlide + 1) % sliderPhotos.length);
-      }, 3000); // Change slide every 3 seconds
-      return () => clearInterval(interval);
-    }
-  }, [autoplay, currentSlide, sliderPhotos.length]);
+  // useEffect(() => {
+  //   if (autoplay) {
+  //     const interval = setInterval(() => {
+  //       setCurrentSlide((currentSlide + 1) % sliderPhotos.length);
+  //     }, 3000); // Change slide every 3 seconds
+  //     return () => clearInterval(interval);
+  //   }
+  // }, [autoplay, currentSlide, sliderPhotos.length]);
 
   const nextSlide = () => {
     setCurrentSlide((currentSlide + 1) % sliderPhotos.length);
@@ -44,9 +44,9 @@ const GallerySection = () => {
     setCurrentSlide((currentSlide - 1 + sliderPhotos.length) % sliderPhotos.length);
   };
 
-  const toggleAutoplay = () => {
-    setAutoplay(!autoplay);
-  };
+  // const toggleAutoplay = () => {
+  //   setAutoplay(!autoplay);
+  // };
 
   return (
     <section className="py-12">
@@ -92,7 +92,7 @@ const GallerySection = () => {
         <div className='flex justify-center items-center'>
         <div className=' flex flex-col justify-center items-center rounded-2xl p-3 bg-sky-200 mb-4 md:flex-row md:w-[55rem] md:m-10'>
           <p className='font-bold text-3xl text-center md:text-4xl'>Every child is an artist. The problem is how to remain an artist once we grow up.</p>
-          <img src={Banner2}  className='w-[15rem] h-[15rem] rounded-full m-3 md:w-[20rem] md:h-[20rem]' />
+          <img src={Banner2}  className='w-[15rem] h-[15rem] rounded-full m-3 md:w-[20rem] md:h-[20rem]' alt=''/>
         </div>
         </div>
         </Flip>
