@@ -34,8 +34,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
       <Router>
+      <Navbar/>
         <Routes>
           <Route path='/' element={<Main/>}/>
           <Route path='/admission' element={<Addmission/>}/>
