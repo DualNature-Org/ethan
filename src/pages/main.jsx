@@ -47,37 +47,42 @@ function Main() {
         </div>
         <div className='m-0 md:flex justify-around items-center  md:m-10 flex-wrap'>
           <Reveal triggerOnce>
-            <div className=' w-[15rem] h-[15rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105  md:w-[20rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[20rem] bg-amber-400 text-center shadow-2xl'>Nursery</div>
+            <div className=' w-[12rem] h-[12rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105  md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>Nursery</div>
           </Reveal>
           <Reveal triggerOnce>
-            <div className='w-[15rem] h-[15rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[20rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[20rem] bg-amber-400 text-center shadow-2xl'>LKG & UKG</div>
+            <div className='w-[12rem] h-[12rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>LKG & UKG</div>
           </Reveal>
           <Reveal triggerOnce>
-            <div className='w-[15rem] h-[15rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[20rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[20rem] bg-amber-400 text-center shadow-2xl'>1st to 3rd</div>
+            <div className='w-[12rem] h-[12rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>1st </div>
+          </Reveal>
+          <Reveal triggerOnce>
+            <div className='w-[12rem] h-[12rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>2nd</div>
+          </Reveal><Reveal triggerOnce>
+            <div className='w-[12rem] h-[12rem] octagon transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>3rd</div>
           </Reveal>
         </div>
       </div>
       <AttentionSeeker triggerOnce>
         <div className='flex justify-center items-center flex-col flex-wrap m-4 md:m-10'>
           <div className='flex justify-center items-center flex-wrap'>
-            <h1 className='font-bold text-3xl md:text-6xl mb-10'>What people say about us ?</h1>
+            <h1 className='font-bold text-2xl md:text-6xl mb-10'>What people say about us ?</h1>
           </div>
           <div className='flex justify-around items-center m-4 md:m-20  flex-wrap'>
-            <img src={Coma} alt="coma" className='w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] mb-8 md:mb-28 pl-10 rotate-180 rounded-full' />
+            <img src={Coma} alt="coma" className='w-[8rem] h-[8rem] mr-[8rem] md:w-[15rem] md:h-[15rem] md:mr-0 mb-8 md:mb-28 pl-10 rotate-180 rounded-full' />
             <div className='md:w-[40rem] h-auto md:h-[20rem] flex justify-center items-center text-center shadow-2xl'>
               <p className='text-lg md:text-2xl m-4'>
                 <strong>{reviews[currentReview].writer}</strong>: {reviews[currentReview].review}
               </p>
             </div>
-            <img src={Coma} alt="coma" className='w-[10rem] h-[10rem] mb-0 mt-8 md:w-[15rem] md:h-[15rem]  md:mb-28 pl-10 rounded-full' />
+            <img src={Coma} alt="coma" className='w-[8rem] h-[8rem] ml-[8rem]  mb-0 mt-8 md:w-[15rem] md:h-[15rem] md:m-0  md:mb-28 pl-10 rounded-full' />
           </div>
         </div>
       </AttentionSeeker>
       <div className='w-full h-auto bg-slate-500'>
-        <Faq />
+        <Faq/>
       </div>
     </div>
   );
 }
 
-export default Main;
+export default Main

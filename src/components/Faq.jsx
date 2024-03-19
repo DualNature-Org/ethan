@@ -34,7 +34,7 @@ function Faq() {
         <div>
             <div className="max-w-screen mx-auto px-5 bg-white min-h-sceen m-20">
                 <div className="flex flex-col items-center">
-                    <h2 className="font-bold text-5xl mt-5 tracking-tight">
+                    <h2 className="font-bold text-4xl mt-5 tracking-tight md:text-5xl">
                         FAQ
                     </h2>
                     <p className="text-neutral-500 text-xl mt-3">
@@ -47,7 +47,7 @@ function Faq() {
                         <Slide triggerOnce>
                             <details key={index} className="group ">
                                 <summary className="flex justify-between items-center text-2xl transition duration-500 ease-in-out  p-5 font-medium cursor-pointer list-none">
-                                    <span>{faq.question}</span>
+                                    <span className='text-xl'>{faq.question}</span>
                                     <span className="transition group-open:rotate-180  duration-500 ease-in-out">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>

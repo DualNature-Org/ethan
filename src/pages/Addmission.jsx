@@ -26,14 +26,14 @@ function Admission() {
   return (
     <div className='bg-white '>
       <div className='w-screen h-[33rem] bg-Adbanner bg-cover  flex justify-center items-center md:w-full'>
-        <div className=' bg-slate-300  bg-opacity-85'>
-          <h1 className='text-6xl md:font-bold md:text-8xl text-center text-blue-600'>Admissions Open</h1>
-          <h1 className='text-6xl md:font-bold md:text-8xl text-center text-white'>2023-2024</h1>
+        <div className=' bg-slate-300  bg-opacity-85 p-3'>
+          <h1 className='text-4xl mb-2 font-bold md:font-bold md:text-8xl text-center text-blue-600'>Admissions Open</h1>
+          <h1 className='text-4xl  md:font-bold md:text-8xl text-center text-white'>2023-2024</h1>
         </div>
 
       </div>
       <div>
-        <h1 className='font-bold text-5xl text-center mt-5'>Admission Enquiry</h1>
+        <h1 className=' text-3xl font-bold md:font-bold md:text-5xl text-center mt-5'>Admission Enquiry</h1>
         <div className='p-10 '>
           <Reveal triggerOnce>
             <form className='flex  flex-col justify-center items-center bg- bg-slate-200 p-5 '>

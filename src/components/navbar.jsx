@@ -1,32 +1,70 @@
 import React, { useState } from 'react';
 import Logo from '../images/logo.jpg'; 
-import {Link} from 'react-router-dom';
+import { ImCross } from 'react-icons/im';
+import { SlOptions } from "react-icons/sl";
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
     <div>
-      <nav className='flex justify-between '>
-        <a href="/">
-        <div className='flex   justify-center items-center ml-6 '>
-          <img src={Logo} alt="logo" className=' w-[4rem] h-[4rem] md:w-[9rem] md:h-[9rem] rounded-full' />
-          <h1 className='text-xl md:text-3xl font-bold font-mono text-slate-500'>Ethan School</h1>
-        </div>
-        </a>
-        <div className="sm:hidden">
-          <button onClick={() => setShowLinks(!showLinks)}>
-            <svg className="w-6 h-6 mt-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-        <ul className={`flex ${showLinks ? 'flex-col' : 'hidden'} sm:flex sm:justify-center sm:items-center sm:flex-wrap`}>
-        <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><Link to="/aboutus">aboutus</Link></li>
-          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'><Link to="/blog">blog</Link></li>
-          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>courses</li>
-          <li className='text-2xl m-3  font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'> <Link to="/admission">admission</Link></li>
+      {/* Navbar for larger devices */}
+      <nav className='hidden sm:flex justify-between bg-white text-slate-500 py-4'>
+        <Link to="/">
+          <div className='flex justify-center items-center'>
+            <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
+            <h1 className='text-3xl md:text-3xl font-bold font-mono'>Ethan School</h1>
+          </div>
+        </Link>
+        <ul className="flex justify-center items-center space-x-8">
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+            <Link to="/aboutus">About</Link>
+          </li>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>Courses</li>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+            <Link to="/admission">Admission</Link>
+          </li>
         </ul>
       </nav>
+
+      {/* Navbar for smaller devices */}
+      <nav className='sm:hidden flex justify-between items-center bg-white text-slate-500 py-4 px-8'>
+        <a href="/">
+          <div className='flex justify-center items-center mr-3'>
+            <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
+            <h1 className='text-2xl md:text-4xl font-bold font-mono'>Ethan School</h1>
+          </div>
+        </a>
+        <div>
+          <button onClick={() => setShowLinks(!showLinks)} className="p-4 focus:outline-none hover:text-blue-500">
+            {showLinks ? <ImCross className="text-4xl" /> : <SlOptions className="text-4xl" />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Overlay for smaller devices when Navbar is open */}
+      {showLinks && (
+
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-75 backdrop-filter backdrop-blur-lg flex flex-col justify-center items-center z-50">
+          <ImCross className="text-white text-3xl cursor-pointer mb-[6rem] border border-slate-400 rounded-full" onClick={() => setShowLinks(false)} />
+          <ul className="text-white text-3xl flex flex-col justify-between space-y-16 mt-18">
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
+              <Link to="/aboutus" onClick={() => setShowLinks(false)}>About</Link>
+            </li>
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
+              <Link to="/blog" onClick={() => setShowLinks(false)}>Blog</Link>
+            </li>
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>Courses</li>
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
+              <Link to="/admission" onClick={() => setShowLinks(false)}>Admission</Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
