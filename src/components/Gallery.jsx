@@ -50,7 +50,7 @@ const GallerySection = () => {
 
   return (
     <section className="py-12">
-        <h1 className=' text-center text-6xl font-bold mb-8'>Explore Our World</h1>
+        <h1 className='  text-3xl text-center font-bold md:text-center md:text-6xl  md:font-bold mb-8'>Explore Our World</h1>
       <div className="container mx-auto px-4">
   
         {/* Image Slider */}
@@ -89,16 +89,16 @@ const GallerySection = () => {
 
         </div>
         <Flip triggerOnce>
-        <div className='flex justify-center items-center'>
-        <div className=' flex flex-col justify-center items-center rounded-2xl p-3 bg-sky-200 mb-4 md:flex-row md:w-[55rem] md:m-10'>
-          <p className='font-bold text-3xl text-center md:text-4xl'>Every child is an artist. The problem is how to remain an artist once we grow up.</p>
-          <img src={Banner2}  className='w-[15rem] h-[15rem] rounded-full m-3 md:w-[20rem] md:h-[20rem]' alt=''/>
+        <div className='flex justify-center items-center '>
+        <div className=' flex flex-col justify-center py-5 items-center rounded-2xl p-3 md:flex-col bg-sky-200 mb-4 lg:flex-row md:w-[55rem] md:m-10'>
+          <p className='font-bold text-2xl text-center md:text-4xl'>Every child is an artist. The problem is how to remain an artist once we grow up.</p>
+          <img src={Banner2}  className='w-[13rem] h-[13rem] rounded-full m-3 md:w-[20rem] md:h-[20rem]' alt=''/>
         </div>
         </div>
         </Flip>
 
         {/* Grid of Photos */}
-        <h1 className=' text-5xl text-center md:text-6xl font-bold md:m-10'>Captured Moments</h1>
+        <h1 className=' text-4xl text-center font-bold md:text-center md:text-6xl  md:font-bold mb-8'>Captured Moments</h1>
         <div className="grid mt-4 grid-cols-1 md:grid-cols-2  gap-5 md:mt-15 md:gap-20 lg:grid-cols-2 ">
           {gridPhotos.map((photo, index) => (
             <div key={index} className="relative">

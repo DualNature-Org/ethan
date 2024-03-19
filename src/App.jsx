@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Aboutus from './pages/Aboutus';
 import BlogPage from './pages/blog'; // Import BlogPage component
 import BlogPostPage from './pages/blogpagepost'; // Import BlogPostPage component
+import GallerySection from './components/Gallery';
+import FacultySection from './components/Facultysection';
 
 function App() {
   // Dummy blog post data
@@ -39,12 +41,14 @@ function App() {
         <Routes>
           <Route path='/' element={<Main/>}/>
           <Route path='/admission' element={<Addmission/>}/>
+          <Route path='/gallery' element={<GallerySection/>}/>
+          <Route path='/faculty' element={<FacultySection/>}/>
           <Route path='/aboutus' element={<Aboutus/>}/>
           <Route path='/blog' element={<BlogPage blogPosts={dummyBlogPosts} />}/> {/* Pass blogPosts prop to BlogPage */}
           <Route path='/blog/:postId' element={<BlogPostPage blogPosts={dummyBlogPosts} />}/> {/* Pass blogPosts prop to BlogPostPage */}
         </Routes>
-      </Router>
       <Footer/>
+      </Router>
     </div>
   );
 }

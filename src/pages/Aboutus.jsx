@@ -10,7 +10,7 @@ function Aboutus() {
     <div>
       <div className='w-screen h-[33rem] bg-Abbanner bg-cover  flex justify-center  items-center md:w-full overflow-hidden'>
         <div className='backdrop-blur-sm  rounded-sm'>
-          <h1 className=' bg-slate-300  bg-opacity-10 md:font-bold md:text-8xl text-center text-black'>Want to know about us?</h1>
+          <h1 className=' bg-slate-300 text-3xl font-bold  bg-opacity-10 md:font-bold md:text-8xl text-center text-black'>Want to know about us?</h1>
         </div>
       </div>
       <div className='m-10'>
