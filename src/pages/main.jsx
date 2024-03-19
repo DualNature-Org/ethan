@@ -6,10 +6,10 @@ import Faq from '../components/Faq';
 
 function Main() {
   const reviews = [
-    { writer: "Rahul Gupta", review: "Sending my child to XYZ School was the best decision I made. The school's nurturing environment and dedicated teachers have greatly improved my child's academic performance and overall personality. I highly recommend XYZ School to every parent seeking quality education for their child." },
-    { writer: "Priya Sharma", review: "I'm immensely satisfied with ABC School's holistic approach to education. Not only does my child excel academically, but they also emphasize character-building and extracurricular activities. The school's supportive staff and state-of-the-art facilities make it a top choice for any parent." },
-    { writer: "Amit Singh", review: "As a parent, I couldn't be happier with the education my child is receiving at PQR School. The school's innovative teaching methods and focus on individualized learning have helped my child reach their full potential. I'm truly grateful for the positive impact PQR School has had on my child's academic journey." },
-    { writer: "Neha Patel", review: "My experience with LMN School has been nothing short of exceptional. The school's commitment to academic excellence, coupled with its emphasis on moral values and discipline, sets it apart from others. I have seen a remarkable transformation in my child since they enrolled at LMN School." }
+    { writer: "Rahul Gupta", review: "Sending my child to Ethan School was the best decision I made. The school's nurturing environment and dedicated teachers have greatly improved my child's academic performance and overall personality. I highly recommend Ethan School to every parent seeking quality education for their child." },
+    { writer: "Priya Sharma", review: "I'm immensely satisfied with Ethan School's holistic approach to education. Not only does my child excel academically, but they also emphasize character-building and extracurricular activities. The school's supportive staff and state-of-the-art facilities make it a top choice for any parent." },
+    { writer: "Amit Singh", review: "As a parent, I couldn't be happier with the education my child is receiving at Ethan School. The school's innovative teaching methods and focus on individualized learning have helped my child reach their full potential. I'm truly grateful for the positive impact Ethan School has had on my child's academic journey." },
+    { writer: "Neha Patel", review: "My experience with Ethan School has been nothing short of exceptional. The school's commitment to academic excellence, coupled with its emphasis on moral values and discipline, sets it apart from others. I have seen a remarkable transformation in my child since they enrolled at Ethan School." }
   ];
 
   const [currentReview, setCurrentReview] = useState(0);
