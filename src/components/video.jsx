@@ -21,7 +21,7 @@ function YouTubeVideo() {
 
   useEffect(() => {
     if (isVisible && videoRef.current) {
-      videoRef.current.src += "&autoplay=1";
+      videoRef.current.src += "&";
     }
   }, [isVisible]);
 
@@ -34,7 +34,7 @@ function YouTubeVideo() {
         height="315"
         src="https://www.youtube.com/embed/HiwnB2aV7P0?si=dgeKucGCVSGgefmX"  // Replace VIDEO_ID_HERE with the actual YouTube video ID
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer;autoplay,clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
     </div>
