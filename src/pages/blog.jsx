@@ -28,7 +28,7 @@ const BlogPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Banner */}
-      <div className="bg-blue-500 text-white px-6 py-4 mb-6">
+      <div className="bg-[#0B3F67] text-white px-6 py-4 mb-6">
         <h1 className="text-3xl font-bold">Welcome to Our Blog</h1>
         <p className="text-lg mt-2">Discover the latest insights and stories from Ethan School.</p>
       </div>

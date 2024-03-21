@@ -37,7 +37,7 @@ function Navbar() {
       </nav>
 
       {/* Navbar for smaller devices */}
-      <nav className='sm:hidden flex justify-between items-center bg-white text-slate-500 py-4 px-8'>
+      <nav className='sm:hidden flex justify-between items-center bg-white text-slate-500 py-2 px-2'>
         <a href="/">
           <div className='flex justify-center items-center mr-3'>
             <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
@@ -65,7 +65,9 @@ function Navbar() {
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
             <Link to="/parents"onClick={() => setShowLinks(false)}>Parents</Link>
             </li>
-            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>Courses</li>
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
+            <Link to='/curriculam' onClick={() => setShowLinks(false)}>Curriculam</Link>
+            </li>
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
               <Link to="/admission" onClick={() => setShowLinks(false)}>Admission</Link>
             </li>
