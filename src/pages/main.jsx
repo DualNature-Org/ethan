@@ -109,9 +109,9 @@ function Main() {
           </div>
           <div className='flex justify-around items-center m-4 md:m-20  flex-wrap'>
             <img src={Coma} alt="coma" className='w-[8rem] h-[8rem] mr-[8rem] md:w-[15rem] md:h-[15rem] md:mr-0 mb-8 md:mb-28 pl-10 rotate-180 rounded-full' />
-            <div className='md:w-[40rem] h-auto md:h-[20rem] flex justify-center items-center text-center shadow-2xl'>
+            <div className='md:w-[40rem] h-auto md:h-[20rem] flex  justify-center items-center text-center shadow-2xl'>
               <p className='text-lg md:text-2xl m-4'>
-                <strong>{reviews[currentReview].writer}</strong>: {reviews[currentReview].review}
+                <strong>{reviews[currentReview].writer}</strong>: {reviews[currentReview].review} 
               </p>
             </div>
             <img src={Coma} alt="coma" className='w-[8rem] h-[8rem] ml-[8rem]  mb-0 mt-8 md:w-[15rem] md:h-[15rem] md:m-0  md:mb-28 pl-10 rounded-full' />
