@@ -10,22 +10,27 @@ function Navbar() {
   return (
     <div>
       {/* Navbar for larger devices */}
-      <nav className='hidden sm:flex justify-between bg-white text-slate-500 py-4'>
+      <nav className='hidden sm:flex justify-between bg-white text-slate-500 '>
         <Link to="/">
           <div className='flex justify-center items-center'>
-            <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
-            <h1 className='text-3xl md:text-3xl font-bold font-mono'>Ethan School</h1>
+            <img src={Logo} alt="logo" className='w-16 h-16 md:w-28 md:h-28 rounded-full' />
+            <h1 className='text-2xl md:text-2xl font-bold font-mono'>Ethan School</h1>
           </div>
         </Link>
         <ul className="flex justify-center items-center space-x-8">
-          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
             <Link to="/aboutus">About</Link>
           </li>
-          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
             <Link to="/blog">Blog</Link>
           </li>
-          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>Courses</li>
-          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-blue-500'>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
+            <Link to="/parents">Parents</Link>
+          </li>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
+            <Link to='/curriculam'>Curriculam</Link>
+            </li>
+          <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
             <Link to="/admission">Admission</Link>
           </li>
         </ul>
@@ -48,15 +53,17 @@ function Navbar() {
 
       {/* Overlay for smaller devices when Navbar is open */}
       {showLinks && (
-
         <div className="fixed inset-0 bg-gray-900 bg-opacity-75 backdrop-filter backdrop-blur-lg flex flex-col justify-center items-center z-50">
           <ImCross className="text-white text-3xl cursor-pointer mb-[6rem] border border-slate-400 rounded-full" onClick={() => setShowLinks(false)} />
-          <ul className="text-white text-3xl flex flex-col justify-between space-y-16 mt-18">
+          <ul className="text-white text-3xl flex flex-col justify-between space-y-10 ">
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
               <Link to="/aboutus" onClick={() => setShowLinks(false)}>About</Link>
             </li>
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
               <Link to="/blog" onClick={() => setShowLinks(false)}>Blog</Link>
+            </li>
+            <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
+            <Link to="/parents"onClick={() => setShowLinks(false)}>Parents</Link>
             </li>
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>Courses</li>
             <li className='text-3xl font-semibold border-b-2 p-3 border-slate-400 text-center  hover:text-blue-500'>
