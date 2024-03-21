@@ -58,18 +58,18 @@ function Main() {
         </div>
         <div className='m-0 md:flex justify-around items-center  md:m-10 flex-wrap'>
           <Reveal triggerOnce>
-            <div className=' w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon transition duration ease-in-out transform hover:-translate-y-1 hover:scale-105  md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>Nursery</div>
+            <div className=' w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon duration ease-in-out transform hover:-translate-y-1 hover:scale-105  md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>Nursery</div>
           </Reveal>
           <Reveal triggerOnce>
-            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon transition duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>LKG & UKG</div>
+            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>LKG & UKG</div>
           </Reveal>
           <Reveal triggerOnce>
-            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon transition duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>1st </div>
+            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>1st </div>
           </Reveal>
           <Reveal triggerOnce>
-            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon transition duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>2nd</div>
+            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>2nd</div>
           </Reveal><Reveal triggerOnce>
-            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon transition duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>3rd</div>
+            <div className='w-[12rem] h-[12rem] hover:shadow-lg hover:shadow-[#0B3F67] transition duration-300 octagon duration ease-in-out transform hover:-translate-y-1 hover:scale-105   md:w-[15rem] m-4 md:m-10 mt-4 md:mt-20 md:h-[15rem] bg-amber-400 text-center shadow-2xl'>3rd</div>
           </Reveal>
         </div>
       </div>
@@ -105,7 +105,7 @@ function Main() {
       <AttentionSeeker>
         <div className='flex justify-center items-center flex-col flex-wrap m-4 md:m-10'>
           <div className='flex justify-center items-center flex-wrap'>
-            <h1 className='font-bold text-2xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>What people say about us ? <img src={as1} alt="as1" /></h1>
+            <h1 className='font-bold text-2xl flex flex-col text-[#0B3F67]-center items-center  md:text-6xl mb-10'>What people say about us ? <img src={as1} alt="as1" /></h1>
           </div>
           <div className='flex justify-around items-center m-4 md:m-20  flex-wrap'>
             <img src={Coma} alt="coma" className='w-[8rem] h-[8rem] mr-[8rem] md:w-[15rem] md:h-[15rem] md:mr-0 mb-8 md:mb-28 pl-10 rotate-180 rounded-full' />
