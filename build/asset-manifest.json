@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbf3bee1.css",
-    "main.js": "/static/js/main.ba8a64c0.js",
+    "main.css": "/static/css/main.fbfd8dbe.css",
+    "main.js": "/static/js/main.79b03ede.js",
     "static/js/453.85736d18.chunk.js": "/static/js/453.85736d18.chunk.js",
     "static/media/infra5-min.png": "/static/media/infra5-min.2cdc30b7c6428b50a719.png",
     "static/media/infra3-min.png": "/static/media/infra3-min.1185cab0f197dfdda06a.png",
@@ -12,8 +12,8 @@
     "static/media/student4.png": "/static/media/student4.083f9c7d10fb20adb4b0.png",
     "static/media/student1.png": "/static/media/student1.fee757028ea7f84e1c37.png",
     "static/media/student5.png": "/static/media/student5.7c6d9d19468ff46e8dca.png",
+    "static/media/student2.png": "/static/media/student2.4a021efe1910e8eea977.png",
     "static/media/infra6-min.png": "/static/media/infra6-min.101dc0b6403ad95794e0.png",
-    "static/media/student2.png": "/static/media/student2.3b87be7733c263d4ae60.png",
     "static/media/infra7-min.png": "/static/media/infra7-min.85bbddabf8b331415bc9.png",
     "static/media/cutekid.png": "/static/media/cutekid.266c5d8b3c874e247430.png",
     "static/media/student3.png": "/static/media/student3.bb389626954372efa820.png",
@@ -21,12 +21,12 @@
     "static/media/coma.png": "/static/media/coma.740b5dee362158db41d8.png",
     "static/media/logo.jpg": "/static/media/logo.4f0ba05f62c889dcd57d.jpg",
     "index.html": "/index.html",
-    "main.fbf3bee1.css.map": "/static/css/main.fbf3bee1.css.map",
-    "main.ba8a64c0.js.map": "/static/js/main.ba8a64c0.js.map",
+    "main.fbfd8dbe.css.map": "/static/css/main.fbfd8dbe.css.map",
+    "main.79b03ede.js.map": "/static/js/main.79b03ede.js.map",
     "453.85736d18.chunk.js.map": "/static/js/453.85736d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbf3bee1.css",
-    "static/js/main.ba8a64c0.js"
+    "static/css/main.fbfd8dbe.css",
+    "static/js/main.79b03ede.js"
   ]
 }

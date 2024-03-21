@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 // import Banner from '../images/aboutbanner.png'
 import FacultySection from '../components/Facultysection';
+import Philosophysection from '../components/Philosophysection';
 import GallerySection from '../components/Gallery';
 
 function Aboutus() {
   const[faculty, setFaculty] = useState(false);
+  const [philosophy, setPhilosophy] = useState(false);
   const[gallery, setGallery] = useState(true);
   return (
     <div>
@@ -14,25 +16,42 @@ function Aboutus() {
         </div>
       </div>
       <div className='m-10'>
-      <div className='flex justify-center items-center'>
-        <h1 className='text-3xl font-semibold text-slate-600 mr-7 cursor-pointer hover:text-blue-500 hover:underline' onClick={()=>{
-          if(gallery){
-            setGallery(false);
-            setFaculty(true);
-          }
-          else{
-            setFaculty(false);
-            setGallery(true);
-          }}}>Gallery</h1>
-        <h1 className='text-3xl font-semibold text-slate-600 ml-7 cursor-pointer hover:text-blue-500 hover:underline'onClick={()=>{
+      <div className='flex justify-center items-center '>
+      <h1 className='text-2xl font-semibold text-slate-600 m-3 cursor-pointer  md:m-5 lg:mr-7 hover:text-[#0B3F67] hover:underline'onClick={()=>{
           if(faculty){
             setFaculty(false);
+            setPhilosophy(false);
             setGallery(true);
           }
           else{
+            setPhilosophy(false);
             setGallery(false);
             setFaculty(true);
           }}}>Faculty</h1>
+      <h1 className='text-2xl font-semibold text-slate-600 m-3 cursor-pointer  md:m-5 lg:mr-7 hover:text-[#0B3F67] hover:underline' onClick={()=>{
+          if(philosophy){
+            setPhilosophy(false);
+            setGallery(false);
+            setFaculty(true);
+          }
+          else{
+            setFaculty(false);
+            setGallery(false);
+            setPhilosophy(true);
+          }}}>Philosophy</h1>
+        
+        <h1 className='text-2xl font-semibold text-slate-600 m-3 cursor-pointer  md:m-5 lg:mr-7 hover:text-[#0B3F67] hover:underline' onClick={()=>{
+          if(gallery){
+            setGallery(false);
+            setPhilosophy(false);
+            setFaculty(true);
+          }
+          else{
+            setFaculty(false);
+            setPhilosophy(false);
+            setGallery(true);
+          }}}>Gallery</h1>
+       
       </div>
       {
         // Faculty
@@ -42,6 +61,10 @@ function Aboutus() {
       {
         // Gallery
         gallery?<GallerySection/>:<div></div>
+      }
+      {
+        // Philosophy
+        philosophy?<Philosophysection/>:<div></div>
       }
       </div>
 

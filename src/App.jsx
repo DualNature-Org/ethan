@@ -7,9 +7,13 @@ import Addmission from "./pages/Addmission";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Aboutus from './pages/Aboutus';
 import BlogPage from './pages/blog'; // Import BlogPage component
+import Faq from './components/Faq'; // Import Faq component
 import BlogPostPage from './pages/blogpagepost'; // Import BlogPostPage component
 import GallerySection from './components/Gallery';
 import FacultySection from './components/Facultysection';
+import Philosophysection from './components/Philosophysection';
+import Curriculam from './pages/Curriculam';
+import Parents from "./pages/parents";
 
 function App() {
   // Dummy blog post data
@@ -43,7 +47,11 @@ function App() {
           <Route path='/admission' element={<Addmission/>}/>
           <Route path='/gallery' element={<GallerySection/>}/>
           <Route path='/faculty' element={<FacultySection/>}/>
+          <Route path='/curriculam' element={<Curriculam/>}/>
+          <Route path='/philosophy' element={<Philosophysection/>}/>
           <Route path='/aboutus' element={<Aboutus/>}/>
+          <Route path='/parents' element={<Parents/>}/>
+          <Route path='/faq' element={<Faq/>}/>
           <Route path='/blog' element={<BlogPage blogPosts={dummyBlogPosts} />}/> {/* Pass blogPosts prop to BlogPage */}
           <Route path='/blog/:postId' element={<BlogPostPage blogPosts={dummyBlogPosts} />}/> {/* Pass blogPosts prop to BlogPostPage */}
         </Routes>

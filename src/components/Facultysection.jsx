@@ -5,35 +5,34 @@ import Reveal from 'react-awesome-reveal';
 
 const Quote = ({ children }) => (
   <div className="text-center my-12">
-    <blockquote className="text-3xl lg:text-4xl font-bold text-gray-800"><ReactTyped strings={[
-       "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.- Malcolm X",
+    <blockquote className="text-3xl lg:text-4xl font-bold text-gray-800">
+      <ReactTyped strings={[
+        "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.- Malcolm X",
 
-       "The roots of education are bitter, but the fruit is sweet. - Aristotle",
-       
-       "Education is not the filling of a pail, but the lighting of a fire. - William Butler Yeats",
-       
-       "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela",
-       
-       "The mind is not a vessel to be filled, but a fire to be kindled.- Plutarch",
-       
-       "Education is the key to unlocking the world, a passport to freedom.- Oprah Winfrey",
-       
-       "Live as if you were to die tomorrow. Learn as if you were to live forever.- Mahatma Gandhi",
-      ]}typeSpeed={40}
-      backSpeed={15}
-      loop /></blockquote>
+        "The roots of education are bitter, but the fruit is sweet. - Aristotle",
+
+        "Education is not the filling of a pail, but the lighting of a fire. - William Butler Yeats",
+
+        "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela",
+
+        "The mind is not a vessel to be filled, but a fire to be kindled.- Plutarch",
+
+        "Education is the key to unlocking the world, a passport to freedom.- Oprah Winfrey",
+
+        "Live as if you were to die tomorrow. Learn as if you were to live forever.- Mahatma Gandhi",
+      ]}
+        typeSpeed={40}
+        backSpeed={15}
+        loop />
+    </blockquote>
   </div>
 );
 
 const FacultySection = () => {
   // Example faculty data
   const facultyMembers = [
-    { id: 1, name: 'John Doe', role: 'Math Teacher' },
-    { id: 2, name: 'Jane Smith', role: 'Science Teacher' },
-    { id: 3, name: 'David Johnson', role: 'History Teacher' },
-    { id: 4, name: 'Emily Brown', role: 'English Teacher' },
-    { id: 5, name: 'Michael Wilson', role: 'Art Teacher' },
-    { id: 6, name: 'Sarah Jones', role: 'Physical Education Teacher' },
+    { id: 1, name: 'John Doe', role: 'Math Teacher', about: 'She is an enthusiastic and lively teacher who constantly looks to evolve and improve upon her teaching methodology. Her learning is fused with fun, music, art, and play. Children not only learn faster, but remember it for life.' },
+    { id: 2, name: 'Jane Smith', role: 'Science Teacher', about: 'She, very patiently, brings out the best in each child, imaginatively filling fun, hope, and self-belief in the lives of children who may sometimes be lost or unable to cope with the rest.' },
     // Add more faculty members as needed
   ];
   const principal = {
@@ -84,18 +83,21 @@ const FacultySection = () => {
         )}
       </Transition>
       {/* Quote */}
-      <Quote/>
+      <Quote />
       <div className="container mx-auto px-4">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-center">Our Faculty</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {/* Faculty Members */}
           {facultyMembers.map((faculty) => (
             <Reveal key={faculty.id} triggerOnce>
-            <div key={faculty.id} className="bg-white rounded-lg shadow-md p-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <img className="rounded-full mx-auto mb-4" src={`https://via.placeholder.com/150?text=${faculty.name}`} alt={faculty.name} />
-              <h3 className="text-2xl lg:text-3xl font-semibold mb-2">{faculty.name}</h3>
-              <p className="text-lg lg:text-xl text-gray-700">{faculty.role}</p>
-            </div>
+              <div key={faculty.id} className="bg-white rounded-lg shadow-md p-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <div className="flex justify-center mb-4">
+                  <img className="rounded-full w-32 h-32 lg:w-48 lg:h-48" src={`https://via.placeholder.com/150?text=${faculty.name}`} alt={faculty.name} />
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-semibold mb-2 text-center">{faculty.name}</h3>
+                <p className="text-xl lg:text-2xl text-gray-700">{faculty.about}</p>
+                <p className="text-lg lg:text-xl text-gray-700 text-center mt-4">{faculty.role}</p>
+              </div>
             </Reveal>
           ))}
         </div>

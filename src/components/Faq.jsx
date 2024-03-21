@@ -1,5 +1,6 @@
 import React from 'react'
-import { Slide } from 'react-awesome-reveal'
+import { JackInTheBox } from 'react-awesome-reveal'
+import as1 from "../images/asset1.png";
 
 function Faq() {
     const faqs = [
@@ -34,9 +35,7 @@ function Faq() {
         <div>
             <div className="max-w-screen mx-auto px-5 bg-white min-h-sceen m-20">
                 <div className="flex flex-col items-center">
-                    <h2 className="font-bold text-4xl mt-5 tracking-tight md:text-5xl">
-                        FAQ
-                    </h2>
+                <h1 className='font-bold flex flex-col text-[#0B3F67] justify-center items-center text-3xl m-7 md:text-5xl'>FAQ<img src={as1} alt="as" /></h1>
                     <p className="text-neutral-500 text-xl mt-3">
                         Frequenty Asked Questions
                     </p>
@@ -44,7 +43,7 @@ function Faq() {
                 <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8 ">
                     {faqs.map((faq, index) => (
 
-                        <Slide triggerOnce>
+                        <JackInTheBox key={index} triggerOnce>
                             <details key={index} className="group ">
                                 <summary className="flex justify-between items-center text-2xl transition duration-500 ease-in-out  p-5 font-medium cursor-pointer list-none">
                                     <span className='text-xl'>{faq.question}</span>
@@ -57,7 +56,7 @@ function Faq() {
                                     {faq.answer}
                                 </p>
                             </details>
-                        </Slide>
+                        </JackInTheBox>
                     ))}
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 // import Banner from "../images/Admissionbanner.png";
 import Callback from "../images/Callback.png";
-import Reveal, { AttentionSeeker, Flip } from 'react-awesome-reveal';
+import Reveal, { AttentionSeeker, JackInTheBox } from 'react-awesome-reveal';
+import as1  from "../images/asset1.png";
 
 function Admission() {
   const [selectedClass, setSelectedClass] = useState('');
@@ -25,15 +26,36 @@ function Admission() {
 
   return (
     <div className='bg-white '>
-      <div className='w-screen h-[33rem] bg-Adbanner bg-cover  flex justify-center items-center md:w-full'>
+      <div className='w-screen h-[22rem]  bg-Adbanner bg-cover md:h-[30rem]  flex justify-center items-center lg:h-[33rem] md:w-full'>
         <div className=' bg-slate-300  bg-opacity-85 p-3'>
           <h1 className='text-4xl mb-2 font-bold md:font-bold md:text-8xl text-center text-blue-600'>Admissions Open</h1>
           <h1 className='text-4xl  md:font-bold md:text-8xl text-center text-white'>2023-2024</h1>
         </div>
 
       </div>
+      <div className='py-4 px-4'>
+        <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5 '>Admission Process at Ethan School <img src={as1} alt="asset" /></h1>
+        <div className='m-4'>
+        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+          Ethan School is an open platform for every kid to grow, nurture, and prosper in the cycle of life. Childhood is the most crucial stage for every human, making it essential to guide children in the right direction across various aspects of life.
+        </p>
+        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+          At Ethan School, we provide a safe and nurturing environment for your children, enabling them to tap into their latest potential. We believe in fostering an explorative and curious mindset to absorb meaningful knowledge, creating well-adjusted, inquisitive, perceptive, bright, and interactive children, ready for formal schooling.
+        </p>
+        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+          We kindle the spark of curiosity in every child, ensuring they shine forever in the future. Childhood is a time for kids to prosper in recreational skills and develop a thirst for knowledge in various domains. Our preschool platform offers an open arena for children to indulge in recreational activities and explore on their own.
+        </p>
+        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+          In our playschool, we provide not only technology-based learning but also blend Western culture with Indian values. This approach promotes modernity while strengthening children's connection to their native roots.
+        </p>
+        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+          We emphasize visual learning, making it easy to grasp and retain knowledge at every level. All our programs are delivered using the best technical equipment, ensuring a memorable learning experience.
+        </p>
+        <h1 className='text-lg text-center md:text-2xl font-bold leading-relaxed mb-8'>“We promise to cherish your little flower with a happy school going experience with every visit. “</h1>
+        </div>
+      </div>
       <div>
-        <h1 className=' text-3xl font-bold md:font-bold md:text-5xl text-center mt-5'>Admission Enquiry</h1>
+        <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5'>Admission Enquiry <img src={as1} alt="asset" /></h1>
         <div className='p-10 '>
           <Reveal triggerOnce>
             <form className='flex  flex-col justify-center items-center bg- bg-slate-200 p-5 '>
@@ -79,10 +101,10 @@ function Admission() {
       )}
       <div className=' bg-blue-300 rounded-lg w-screen flex flex-col justify-center p-5 items-center md:flex-row justify-around md:w-full'>
         <div className='flex flex-col justify-center items-center'>
-          <img src={Callback} className='w-[10rem] h-[10rem] rounded-full md:w-[20rem] md:h-[20rem]' alt=''/>
+          <img src={Callback} className='w-[10rem] h-[10rem] rounded-full md:w-[20rem] md:h-[20rem]' alt='' />
           <h1 className='font-bold text-lg text-center bg-white rounded-lg p-2 m-3 md:text-xl'>Request a callback from us. </h1>
         </div>
-        <Flip triggerOnce>
+        <JackInTheBox triggerOnce>
           <form className=' flex flex-col justify-center items-center p-6 w-[20rem] h-[23rem] m-2 bg-blue-200 md:w-[25rem] md:h-[28rem] md:justify-between md:p-8'>
             <label htmlFor="name" className='font-semibold text-lg mr-2 md:text-xl'>Name</label>
             <input type="text" id="name" name="name" className=' m-3 w-[18rem] h-[2rem] p-2' placeholder='Enter your name' />
@@ -92,7 +114,7 @@ function Admission() {
             <input type="text" id="Class" name="Class" className='m-3 w-[18rem] h-[2rem] p-2' placeholder='Enter your class' />
             <button type="submit" className='bg-blue-500 text-white rounded-lg p-2 md:text-xl font font-semibold mt-7 hover:bg-blue-400'>Submit</button>
           </form>
-        </Flip>
+        </JackInTheBox>
       </div>
     </div>
   );

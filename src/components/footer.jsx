@@ -37,8 +37,9 @@ function Footer() {
                     
                     <div className=' mb-10 justify-normal md:flex flex-col mt-10 mb-0 md:items-center md:flex-row md:justify-evenly md:ml-auto'>
                         <div className='flex justify-center items-center flex-col md:mr-10'>
-                            <h1 className='text-xl font-medium mb-4 cursor-pointer hover:text-blue-700'><Link to='/gallery'>Gallery</Link></h1>
-                            <h1 className='text-xl font-medium mb-4 cursor-pointer hover:text-blue-700'><Link to="/faculty">Faculty</Link></h1>
+                            <h1 className='text-xl font-medium mb-4 cursor-pointer hover:text-[#0B3F67]'><Link to='/gallery'>Gallery</Link></h1>
+                            <h1 className='text-xl font-medium mb-4 cursor-pointer hover:text-[#0B3F67]'><Link to='/faq'>FAQ</Link></h1>
+                            <h1 className='text-xl font-medium mb-4 cursor-pointer hover:text-[#0B3F67]'><Link to="/faculty">Faculty</Link></h1>
                         </div>
                         <div className='flex justify-center items-center flex-col'>
                             <h1 className='text-xl font-medium mb-4'>Policy</h1>
@@ -46,13 +47,13 @@ function Footer() {
                         </div>
                     </div>
                     <div className='md:ml-12'>
-                        <h1 className='text-2xl font-semibold mb-4 text-blue-700 md:text-3xl'>Contact us</h1>
+                        <h1 className='text-2xl font-semibold mb-4 text-[#0B3F67] md:text-3xl'>Contact us</h1>
                         <p className='text-xl font-medium flex items-center mb-4'><CiPhone className='w-6 h-6 mr-2' />+91-9610002304</p>
                         <p className='text-xl font-medium flex items-center mb-4'><CiHome className='w-6 h-6 mr-2' /> Ward no 5, Jeet nagar, Jhunjhunu</p>
                         <div className='flex justify-start items-center'>
-                            <CiFacebook className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-blue-700 text-white mr-4 hover:animate-bounce' />
-                            <CiInstagram className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-blue-700 text-white hover:animate-bounce' />
-                            <CiTwitter className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-blue-700 text-white ml-4 hover:animate-bounce' />
+                            <CiFacebook className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white mr-4 hover:animate-bounce' />
+                            <CiInstagram className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white hover:animate-bounce' />
+                            <CiTwitter className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white ml-4 hover:animate-bounce' />
                         </div>
                     </div>
                 </div>
@@ -60,7 +61,7 @@ function Footer() {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-10 right-10 p-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="fixed bottom-10 right-10 p-3 bg-[#0B3F67] text-white rounded-full shadow-md hover:bg-[#DEB525] focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                     <FaRegArrowAltCircleUp className='w-8 h-8' />
                 </button>
