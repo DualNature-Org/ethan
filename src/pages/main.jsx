@@ -29,9 +29,9 @@ function Main() {
     <div>
       <div className='w-screen h-[40rem] bg-banner bg-cover  flex justify-center  md:w-full overflow-hidden'>
         <JackInTheBox triggerOnce>
-          <div className='mb-[16rem] md:w-[30rem] md:mb-0 md:h-[28rem] m-11  relative  bg-slate-200 rounded-2xl shadow-2xl p-8'>
+          <div className='mb-[16rem] md:w-[38rem] md:mb-0 md:h-[28rem] m-11  relative  bg-slate-200 rounded-2xl shadow-2xl p-8' style={{opacity: '.8'}}>
             <h1 className='text-4xl md:text-7xl font-bold text-black text-center mb-8'>Fostering a love for learning.</h1>
-            <p className='text-lg md:text-2xl font-mono text-center'>A young heart, a curious mind. Is there a better time to love to learn?</p>
+            <p className='text-lg md:text-2xl font-mono text-center'>In the fertile soil of youth, curiosity blossoms into a vibrant tapestry of exploration. With gentle guidance and boundless encouragement, we can inspire young minds to embrace the joy of discovery.</p>
           </div>
         </JackInTheBox>
       </div>
@@ -48,7 +48,7 @@ function Main() {
 
       <div className='flex justify-center items-center'>
         <JackInTheBox triggerOnce>
-          <img src={home1} alt="home1" className=' w-[65rem] h-[16rem] md:w-[69rem] md:h-[19rem] lg:w-[77rem] lg:h-[29rem] ' />
+          <img src={home1} alt="home1" className=' w-[62rem] h-[30rem] md:w-[69rem] md:h-[19rem] lg:w-[77rem] lg:h-[29rem] ' />
         </JackInTheBox>
       </div>
 

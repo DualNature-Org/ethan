@@ -10,28 +10,28 @@ function Navbar() {
   return (
     <div>
       {/* Navbar for larger devices */}
-      <nav className='hidden sm:flex justify-between bg-white text-slate-500 '>
+      <nav className='hidden sm:flex justify-between bg-white text-slate-500 ' style={{backgroundColor: '#2f2fa7', padding: '.6rem', borderBottom: 'solid .5px white', boxShadow: '10px 5px 5px red;'}}>
         <Link to="/">
           <div className='flex justify-center items-center'>
-            <img src={Logo} alt="logo" className='w-16 h-16 md:w-28 md:h-28 rounded-full' />
-            <h1 className='text-2xl md:text-2xl font-bold font-mono'>Ethan School</h1>
+            <img src={Logo} alt="logo" className='w-16 h-16 md:w-25 md:h-25 rounded-full' />
+            <h1 className='text-2xl md:text-2xl font-bold font-mono' style={{marginLeft: '.6rem', fontFamily: 'none', color:'antiquewhite', fontSize: '1.8rem'}}>Ethan School</h1>
           </div>
         </Link>
         <ul className="flex justify-center items-center space-x-8">
           <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
-            <Link to="/aboutus">About</Link>
+            <Link to="/aboutus" style={{color: 'gold'}}>About</Link>
           </li>
           <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" style={{color: 'gold'}}>Blog</Link>
           </li>
           <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
-            <Link to="/parents">Parents</Link>
+            <Link to="/parents" style={{color: 'gold'}}>Parents</Link>
           </li>
           <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
-            <Link to='/curriculam'>Curriculam</Link>
+            <Link to='/curriculam' style={{color: 'gold'}}>Curriculum</Link>
             </li>
           <li className='text-xl md:text-2xl font-bold font-mono text-slate-500 cursor-pointer hover:text-[#0B3F67]'>
-            <Link to="/admission">Admission</Link>
+            <Link to="/admission" style={{color: 'gold'}}>Admission</Link>
           </li>
         </ul>
       </nav>
