@@ -37,11 +37,11 @@ function Navbar() {
       </nav>
 
       {/* Navbar for smaller devices */}
-      <nav className='sm:hidden flex justify-between items-center bg-white text-slate-500 py-2 px-2'>
+      <nav className='sm:hidden flex justify-between items-center bg-[#2f2fa7] text-white py-2 px-2'>
         <a href="/">
           <div className='flex justify-center items-center mr-3'>
             <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
-            <h1 className='text-2xl md:text-4xl font-bold font-mono'>Ethan School</h1>
+            <h1 className='text-3xl ml-2 md:text-4xl font-bold font-mono'>Ethan School</h1>
           </div>
         </a>
         <div>
