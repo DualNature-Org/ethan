@@ -46,9 +46,9 @@ function Main() {
         </div>
       </Reveal>
 
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center bg-blue-200 p-2 pt-2 pb-2  md:p-10 md:pt-16  md:pb-16 mr-2 ml-2'>
         <JackInTheBox triggerOnce>
-          <img src={home1} alt="home1" className=' w-[62rem] h-[30rem] md:w-[69rem] md:h-[19rem] lg:w-[77rem] lg:h-[29rem] ' />
+          <img src={home1} alt="home1" className=' w-[62rem] h-[18rem] md:w-[69rem] md:h-[19rem] lg:w-[75rem] lg:h-[29rem] ' />
         </JackInTheBox>
       </div>
 
@@ -73,7 +73,7 @@ function Main() {
           </Reveal>
         </div>
       </div>
-      <div className='mb-[7rem] mt-[7.5rem]'>
+      <div className='mb-[7rem] mt-[7.5rem] bg-blue-100 p-4 mr-2 ml-2'>
       <div className='flex flex-col justify-center items-center'>
        <img src={infra} alt="infrastureuture" className='py-4 px-4 w-[60rem] h-[19rem] hover:scale-105 transition ease-out  md:w-[65rem] md:h-[27rem] lg:w-[70rem] lg:h-[30rem]' />
        <h1 className='text-xl m-2 font-semibold  '>Our Infrastructure</h1>
@@ -85,23 +85,25 @@ function Main() {
       </div>
       <div className='m-2'>
         <div className='flex justify-center items-center flex-wrap'>
-          <h1 className='font-bold text-4xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>Our Vision and Mission<img src={as1} alt="as1" /></h1>
+          <h1 className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>Our Vision and Mission<img src={as1} alt="as1" /></h1>
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-3xl font-bold m-2'>Vision</h1>
-            <p className='text-xl text-center py-2 px-2 md:text-2xl'>A child's human rights are non-negotiable for us.
+            <p className='text-xl text-center py-4 px-4 md:text-2xl md:py-8 md:px-8'>A child's human rights are non-negotiable for us.
               We prioritise a child's human rights as part of our ‘What's Right for the Child’ (WRFC) ethos. Our fundamental belief and ideology is shaped by the right to trust, the right to be respected, and the right to live in an abuse-free world.
             </p>
           </div>
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-3xl font-bold m-2'>Mission</h1>
-            <p className='text-xl text-center py-2 px-2 md:text-2xl'>We are committed to instilling skills, knowledge, and values in our children in order to give them an inner voice for the twenty-first century.
+            <p className='text-xl text-center py-4 px-4 md:text-2xl'>We are committed to instilling skills, knowledge, and values in our children in order to give them an inner voice for the twenty-first century.
               Our learning environment allows each child to nurture the learning minds namely the Focused Mind, Analytical Mind, Inventive Mind, Empathetic Mind, and Conscientious Mind.
 
             </p>
           </div>
         </div>
       </div>
+      <div className='w-full p-3 bg-sky-200 '>
       <Video/>
+      </div>
       <AttentionSeeker>
         <div className='flex justify-center items-center flex-col  m-4 md:m-10 mt-15'>
           <div className='flex justify-center items-center flex-wrap'>

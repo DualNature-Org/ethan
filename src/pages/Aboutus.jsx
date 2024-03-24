@@ -5,9 +5,9 @@ import Philosophysection from '../components/Philosophysection';
 import GallerySection from '../components/Gallery';
 
 function Aboutus() {
-  const[faculty, setFaculty] = useState(false);
+  const[faculty, setFaculty] = useState(true);
   const [philosophy, setPhilosophy] = useState(false);
-  const[gallery, setGallery] = useState(true);
+  const[gallery, setGallery] = useState(false);
   return (
     <div>
       <div className='w-screen h-[33rem] bg-Abbanner bg-cover  flex justify-center  items-center md:w-full overflow-hidden'>
