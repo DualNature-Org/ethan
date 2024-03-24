@@ -13,7 +13,7 @@ function Curriculam() {
           <h1 className='bg-slate-400 text-4xl font-bold bg-opacity-10 md:font-bold md:text-8xl text-center text-blue-500'>Our Curriculum</h1>
         </div>
       </div>
-      <h1 className='font-bold flex flex-col text-[#0B3F67] justify-center items-center text-3xl pt-12 md:text-6xl'> Ethan school focuses on <img src={as1} alt="as" /></h1>
+      <h1 className='font-bold flex flex-col text-[#0B3F67] justify-center items-center text-3xl pt-12 md:text-6xl'> Our Focus <img src={as1} alt="as" /></h1>
       <div className='flex justify-center items-center flex-col gap-[3rem] m-8'>
         <div className='flex flex-col justify-center items-center md:flex-row md:gap-[6rem]'>
           <img src={philosophy1} className='w-[13rem] h-[13rem] rounded-full md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem]' alt="curr" />

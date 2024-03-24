@@ -36,16 +36,16 @@ function Admission() {
       <div className='py-4 px-4'>
         <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5 '>Admission Process at Ethan School <img src={as1} alt="asset" /></h1>
         <div className='m-4'>
-        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+        <p className='text-lg md:text-xl leading-relaxed mb-2'>
           Ethan School is an open platform for every kid to grow, nurture, and prosper in the cycle of life. Childhood is the most crucial stage for every human, making it essential to guide children in the right direction across various aspects of life.
         </p>
-        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+        <p className='text-lg md:text-xl leading-relaxed mb-2'>
           At Ethan School, we provide a safe and nurturing environment for your children, enabling them to tap into their latest potential. We believe in fostering an explorative and curious mindset to absorb meaningful knowledge, creating well-adjusted, inquisitive, perceptive, bright, and interactive children, ready for formal schooling.
         </p>
-        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+        <p className='text-lg md:text-xl leading-relaxed mb-2'>
           We kindle the spark of curiosity in every child, ensuring they shine forever in the future. Childhood is a time for kids to prosper in recreational skills and develop a thirst for knowledge in various domains. Our preschool platform offers an open arena for children to indulge in recreational activities and explore on their own.
         </p>
-        <p className='text-lg md:text-xl leading-relaxed mb-8'>
+        <p className='text-lg md:text-xl leading-relaxed mb-2'>
           In our playschool, we provide not only technology-based learning but also blend Western culture with Indian values. This approach promotes modernity while strengthening children's connection to their native roots.
         </p>
         <p className='text-lg md:text-xl leading-relaxed mb-8'>

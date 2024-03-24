@@ -40,8 +40,8 @@ function Navbar() {
       <nav className='sm:hidden flex justify-between items-center bg-[#2f2fa7] text-white py-2 px-2'>
         <a href="/">
           <div className='flex justify-center items-center mr-3'>
-            <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' />
-            <h1 className='text-3xl ml-2 md:text-4xl font-bold font-mono'>Ethan School</h1>
+            <img src={Logo} alt="logo" className='w-20 h-20 md:w-32 md:h-32 rounded-full' style={{width: '3rem', height: '3rem'}}/>
+            <h1 className='text-3xl ml-2 md:text-4xl font-bold font-mono' style={{fontSize: '1.5rem'}}>Ethan School</h1>
           </div>
         </a>
         <div>
