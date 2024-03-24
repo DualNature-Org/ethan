@@ -35,18 +35,21 @@ function Footer() {
                 <div className='flex flex-col md:flex-row items-center justify-center md:justify-between'>
                     <img src={Logo} alt="logo" className='w-24 h-24 md:w-32 md:h-32 rounded-full mb-8 md:mb-0' />
 
-                    <div className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-10 justify-center md:flex flex-col mt-10 mb-0 md:items-center md:mr-[4rem] md:flex-row md:justify-evenly md:ml-auto lg:mr-[7rem]'>
+                    <div className='grid grid-cols-2 mb-8 md:grid-cols-3 gap-4 md:gap-8 md:mb-10 justify-center md:flex flex-col mt-10 lg:mb-0 md:items-center md:mr-[4rem] md:flex-row md:justify-evenly md:ml-auto lg:mr-[7rem]'>
                         <div className='flex justify-center items-center flex-col'>
-                            <h1 className='text-xl font-medium mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/gallery'>Gallery</Link></h1>
-                            <h1 className='text-xl font-medium mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/philosophy'>Philosophy</Link></h1>
+                            <h1 className='text-xl mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/gallery'>Gallery</Link></h1>
+                            <h1 className='text-xl mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/philosophy'>Philosophy</Link></h1>
+                            <h1 className='text-xl mb-4 font-semibold  md:hidden'>Policy</h1>
+
                         </div>
                         <div className='flex justify-center items-center flex-col'>
-                            <h1 className='text-xl font-medium mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/faq'>FAQ</Link></h1>
-                            <h1 className='text-xl font-medium mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to="/faculty">Faculty</Link></h1>
+                            <h1 className='text-xl mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/faq'>FAQ</Link></h1>
+                            <h1 className='text-xl mb-4 font-semibold  hover:text-[#0B3F67] md:hidden'><Link to="/aboutus">About us</Link></h1>
+                            <h1 className='text-xl mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to="/faculty">Faculty</Link></h1>
                         </div>
-                        <div className='flex justify-center items-center flex-col'>
-                            <h1 className='text-xl font-medium mb-4 font-semibold '>Policy</h1>
-                            <h1 className='text-xl font-medium mb-4 font-semibold  hover:text-[#0B3F67]'><Link to="/aboutus">About us</Link></h1>
+                        <div className='hidden md:visible md:flex justify-center items-center flex-col'>
+                            <h1 className='text-xl mb-4 font-semibold '>Policy</h1>
+                            <h1 className='text-xl mb-4 font-semibold  hover:text-[#0B3F67]'><Link to="/aboutus">About us</Link></h1>
                         </div>
                     </div>
 
