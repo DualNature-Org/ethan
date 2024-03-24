@@ -73,7 +73,7 @@ function Main() {
           </Reveal>
         </div>
       </div>
-      <div className='mb-[7rem] mt-[7.5rem] bg-blue-100 p-10 mr-2 ml-2'>
+      <div className='mb-[7rem] mt-[7.5rem] bg-blue-100 p-4 mr-2 ml-2'>
       <div className='flex flex-col justify-center items-center'>
        <img src={infra} alt="infrastureuture" className='py-4 px-4 w-[60rem] h-[19rem] hover:scale-105 transition ease-out  md:w-[65rem] md:h-[27rem] lg:w-[70rem] lg:h-[30rem]' />
        <h1 className='text-xl m-2 font-semibold  '>Our Infrastructure</h1>
