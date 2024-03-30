@@ -1,6 +1,6 @@
 import React from 'react'
 import { JackInTheBox } from 'react-awesome-reveal'
-import as1 from "../images/asset1.png";
+// import as1 from "../images/asset1.png";
 
 function Faq() {
     const faqs = [
@@ -35,7 +35,7 @@ function Faq() {
         <div>
             <div className="max-w-screen mx-auto px-5 bg-white min-h-sceen m-20">
                 <div className="flex flex-col items-center">
-                <h1 className='font-bold flex flex-col text-[#0B3F67] justify-center items-center text-3xl m-7 md:text-5xl'>FAQ<img src={as1} alt="as" /></h1>
+                <h1 className='font-bold flex  text-[#0B3F67] justify-center items-center text-3xl m-7 md:text-5xl'><h1 className='text-10xl'>F</h1>AQ</h1>
                     <p className="text-neutral-500 text-xl mt-3">
                         Frequenty Asked Questions
                     </p>

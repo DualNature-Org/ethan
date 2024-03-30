@@ -44,7 +44,10 @@ function Philosophysection() {
   return (
     <>
     <div className=' flex justify-center items-center flex-col'>
-    <h1 className='text-3xl m-3 text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-10'>Our Philosophy<img src={as1} alt="asset" /></h1>
+    <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
+            <h1 className='flex justify-center items-center'><h1 className='text-10xl mb-7'>O</h1>UR PHILOSOPHY</h1>
+            <img src={as1} alt="as1" />
+          </div>
     <div className="flex flex-wrap justify-center py-4 px-4 gap-16">
       {dummyData.map(item => (
         <Reveal key={item.id} triggerOnce>
