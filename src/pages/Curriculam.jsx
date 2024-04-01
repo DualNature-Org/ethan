@@ -18,7 +18,7 @@ function Curriculam() {
             <img src={as1} alt="as1" />
           </div>
       <div className='flex justify-center items-center flex-col gap-[3rem] m-8'>
-        <div className='flex flex-col justify-center items-center md:flex-row md:gap-[6rem]'>
+        <div className='flex flex-col justify-center items-center  md:flex-row md:gap-[6rem]'>
           <img src={philosophy1} className='w-[13rem] h-[13rem] rounded-full md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem]' alt="curr" />
           <div className='flex flex-col justify-center items-center w-full md:w-[23rem]'>
             <h1 className='text-xl md:text-3xl font-bold m-3 text-center'>Fine motor skills</h1>
