@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Luckiest+Guy&family=Pacifico&display=swap");
 
 *{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:Luckiest Guy;
   margin: none;
   padding: none;
   }
@@ -46,4 +47,5 @@
   .video-container iframe.visible {
     opacity: 1;
   }
+  
   

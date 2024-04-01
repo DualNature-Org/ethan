@@ -1,41 +1,64 @@
 import React from 'react'
 import { JackInTheBox } from 'react-awesome-reveal'
-import as1 from "../images/asset1.png";
+// import as1 from "../images/asset1.png";
 
 function Faq() {
     const faqs = [
-        {
-            question: "What are the school timings?",
-            answer: "The school timings are from 8:00 AM to 2:00 PM on weekdays."
-            
-        },
-        {
-            question: "Is transportation available for students?",
-            answer: "Yes, we provide transportation services for students residing in designated areas. Please contact the school office for more information."
-        },
-        {
-            question: "Does the school offer extracurricular activities?",
-            answer: "Absolutely! We offer a wide range of extracurricular activities including sports, music, arts, drama, and more to ensure the holistic development of our students."
-        },
-        {
-            question: "What is the admission process?",
-            answer: "The admission process involves filling out an application form, submitting required documents, appearing for an entrance test (if applicable), and attending an interview. Please visit our website or contact the admissions office for detailed information."
-        },
-        {
-            question: "Are scholarships available?",
-            answer: "Yes, we offer scholarships to deserving students based on their academic performance, extracurricular achievements, and financial need. Scholarship criteria and application details can be found on our website or obtained from the school office."
-        },
-        {
-            question: "How are parents involved in the school?",
-            answer: "We encourage parental involvement through various means such as parent-teacher meetings, school events and volunteering opportunities. Parents are an integral part of our school community and their support is highly valued."
-        }
+            {
+              question: "When should I drop my child off for school?",
+              answer: "You can drop your child off for school 10-30 minutes prior to the school timings. In summers, the timings are 8 AM to 2 PM with drop-off time at 7:30 AM."
+            },
+            {
+              question: "What is the procedure for snacks and lunch?",
+              answer: "We provide breakfast and lunch at school. You can refer to the menu for details."
+            },
+            {
+              question: "Is there any school uniform?",
+              answer: "No, there is no school uniform at the moment."
+            },
+            {
+              question: "What happens if my child gets sick or hurt?",
+              answer: "In that case, we inform you first-hand and provide necessary first aid if required."
+            },
+            {
+              question: "What is the curriculum you use?",
+              answer: "We use the Cambridge curriculum prescribed by Cambridge University, London, rewritten by Indian authors."
+            },
+            {
+              question: "Does my child need to be potty trained?",
+              answer: "Ideally, yes. However, if your child is not yet potty trained, we can assist in the process."
+            },
+            {
+              question: "Do children nap?",
+              answer: "Not all children nap, but arrangements are available if they feel sleepy."
+            },
+            {
+              question: "How do I find out what’s going on in my child’s class or in the larger school community?",
+              answer: "We update everything in the school WhatsApp group and on our website."
+            },
+            {
+              question: "What about the playground? Will my child be playing with bigger kids?",
+              answer: "Yes, it is necessary for socializing. We believe in genuine socialization and do not segregate children by age."
+            },
+            {
+              question: "Where can I find out which teacher my child will have?",
+              answer: "In the school WhatsApp group, we update all these details."
+            },
+            {
+              question: "What do they do all day?",
+              answer: "Their day is planned with various activities aimed at enhancing cognitive abilities, physical development, and emotional well-being."
+            },
+            {
+              question: "Do you have CCTV cameras?",
+              answer: "Yes, we have CCTV cameras, and parents have access to them to keep an eye on their children while they are in school."
+            }
     ];
 
     return (
         <div>
             <div className="max-w-screen mx-auto px-5 bg-white min-h-sceen m-20">
                 <div className="flex flex-col items-center">
-                <h1 className='font-bold flex flex-col text-[#0B3F67] justify-center items-center text-3xl m-7 md:text-5xl'>FAQ<img src={as1} alt="as" /></h1>
+                <h1 className='font-bold flex  text-[#0B3F67] justify-center items-center text-3xl m-7 md:text-5xl'><h1 className='text-10xl'>F</h1>AQ</h1>
                     <p className="text-neutral-500 text-xl mt-3">
                         Frequenty Asked Questions
                     </p>

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     extend: {
+      fontSize: {
+        '10xl': '10rem',
+      },
       backgroundImage: {
         'Adbanner': "url('/src/images/student/student4.png')",
         'Abbanner': "url('/src/images/student/student1.png')",
@@ -14,4 +17,3 @@ module.exports = {
   },
   plugins: [],
 }
-

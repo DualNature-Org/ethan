@@ -51,7 +51,10 @@ const GallerySection = () => {
 
   return (
     <section className="py-12">
-       <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5'>Explore our World<img src={as1} alt="asset" /></h1>
+      <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
+            <h1 className='flex justify-center items-center'><h1 className='text-10xl mb-7'>E</h1>XPLORE OUR WORLD</h1>
+            <img src={as1} alt="as1" />
+          </div>
       <div className="container mx-auto px-4">
   
         {/* Image Slider */}
