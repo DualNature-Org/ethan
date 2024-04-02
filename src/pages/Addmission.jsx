@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import Banner from "../images/Admissionbanner.png";
 import Callback from "../images/Callback.png";
 import Reveal, { AttentionSeeker, JackInTheBox } from 'react-awesome-reveal';
+// import i2 from "../images/i2.png";
 import as1  from "../images/asset1.png";
 
 function Admission() {
@@ -52,6 +53,9 @@ function Admission() {
           We emphasize visual learning, making it easy to grasp and retain knowledge at every level. All our programs are delivered using the best technical equipment, ensuring a memorable learning experience.
         </p>
         <h1 className='text-lg text-center md:text-2xl font-bold leading-relaxed mb-8'>“We promise to cherish your little flower with a happy school going experience with every visit. “</h1>
+        </div>
+        <div>
+          {/* <img src={i2} alt="isi" className='w-[10rem] h-[10rem]'/> */}
         </div>
       </div>
       <div>
