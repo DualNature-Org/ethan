@@ -1,7 +1,7 @@
 // src/pages/BlogPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import i1 from '../images/i1.png'
+import i1 from '../images/i3.png'
 
 const BlogPage = () => {
   // Dummy blog post data
@@ -34,7 +34,7 @@ const BlogPage = () => {
         <h1 className="text-3xl font-bold">Welcome to Our Blog</h1>
         <p className="text-lg mt-2">Discover the latest insights and stories from Ethan School.</p>
         </div>
-      <img src={i1} alt="i1" className=' w-[10rem] h-[10rem]' />
+      <img src={i1} alt="i1" className=' w-[10rem] h-[10rem] m-2 bg-white rounded-full' />
       </div>
 
       {/* Blog Posts */}

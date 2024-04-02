@@ -4,26 +4,15 @@ import { ReactTyped } from "react-typed";
 import Reveal from 'react-awesome-reveal';
 
 const Quote = ({ children }) => (
-  <div className="text-center my-12">
-    <blockquote className="text-3xl lg:text-4xl font-bold text-gray-800">
-      <ReactTyped strings={[
-        "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.- Malcolm X",
-
-        "The roots of education are bitter, but the fruit is sweet. - Aristotle",
-
-        "Education is not the filling of a pail, but the lighting of a fire. - William Butler Yeats",
-
-        "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela",
-
-        "The mind is not a vessel to be filled, but a fire to be kindled.- Plutarch",
-
-        "Education is the key to unlocking the world, a passport to freedom.- Oprah Winfrey",
-
-        "Live as if you were to die tomorrow. Learn as if you were to live forever.- Mahatma Gandhi",
-      ]}
+  <div className="text-center bg-blue-200 px-2 py-2 my-12">
+    <blockquote className="text-lg lg:text-xl xl:text-2xl 2xl:text-4xl  font-normal text-gray-800">
+      <ReactTyped
+        strings={children.map(({ quote, author }) => `${quote} - <b>${author}</b>`)}
         typeSpeed={40}
         backSpeed={15}
-        loop />
+        loop
+        contentType='html'
+      />
     </blockquote>
   </div>
 );
@@ -64,11 +53,11 @@ const FacultySection = () => {
                     src={`https://via.placeholder.com/150?text=${principal.name}`}
                     alt="Principal"
                   />
-                  <p className="text-xl lg:text-2xl" style={{textAlign: 'justify', color: 'rgb(4 25 91)'}}>
+                  <p className="text-xl lg:text-2xl" style={{ textAlign: 'justify', color: 'rgb(4 25 91)' }}>
                     "Welcome to Ethan School! Our mission is to provide a nurturing and inclusive environment where students can thrive academically, socially, and emotionally. As the Principal, it's my honor to lead our dedicated team of educators and staff in guiding our students toward success.
                     At Ethan School, we believe in the power of education to transform lives. We are committed to fostering a love of learning in our students and empowering them to become critical thinkers, problem solvers, and compassionate citizens of the world.
                   </p>
-                  <p className="text-xl lg:text-2xl mt-4"style={{textAlign: 'justify', color: 'rgb(4 25 91)'}}>
+                  <p className="text-xl lg:text-2xl mt-4" style={{ textAlign: 'justify', color: 'rgb(4 25 91)' }}>
                     Our school values diversity, equity, and inclusion, and we strive to create a welcoming and supportive community for all. We celebrate the unique strengths and backgrounds of each individual and work together to create a positive and inclusive learning environment.
                     As we embark on this journey together, I invite parents, students, and staff to join us in our commitment to excellence. Together, we can inspire greatness, foster creativity, and unlock the potential within each and every student."
                   </p>
@@ -79,7 +68,44 @@ const FacultySection = () => {
         )}
       </Transition>
       {/* Quote */}
-      <Quote />
+      <Quote>
+        {[
+          {
+            quote:
+              "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+            author: "Malcolm X",
+          },
+          {
+            quote: "The roots of education are bitter, but the fruit is sweet.",
+            author: "Aristotle",
+          },
+          {
+            quote:
+              "Education is not the filling of a pail, but the lighting of a fire.",
+            author: "William Butler Yeats",
+          },
+          {
+            quote:
+              "Education is the most powerful weapon which you can use to change the world.",
+            author: "Nelson Mandela",
+          },
+          {
+            quote:
+              "The mind is not a vessel to be filled, but a fire to be kindled.",
+            author: "Plutarch",
+          },
+          {
+            quote:
+              "Education is the key to unlocking the world, a passport to freedom.",
+            author: "Oprah Winfrey",
+          },
+          {
+            quote:
+              "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            author: "Mahatma Gandhi",
+          },
+        ]}
+      </Quote>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-center">Our Faculty</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

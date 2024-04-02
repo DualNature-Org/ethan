@@ -4,6 +4,7 @@ import Callback from "../images/Callback.png";
 import Reveal, { AttentionSeeker, JackInTheBox } from 'react-awesome-reveal';
 // import i2 from "../images/i2.png";
 import as1  from "../images/asset1.png";
+import i3  from "../images/i2.png";
 
 function Admission() {
   const [selectedClass, setSelectedClass] = useState('');
@@ -35,7 +36,10 @@ function Admission() {
 
       </div>
       <div className='py-4 px-4'>
+        <div className='flex justify-center'>
         <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5 '>Admission Process at Ethan School <img src={as1} alt="asset" /></h1>
+        <img src={i3} alt="sad" className='w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] lg:w-[16rem] lg:h-[16rem] rounded-full' />
+        </div>
         <div className='m-4'>
         <p className='text-lg md:text-xl leading-relaxed mb-2'>
           Ethan School is an open platform for every kid to grow, nurture, and prosper in the cycle of life. Childhood is the most crucial stage for every human, making it essential to guide children in the right direction across various aspects of life.

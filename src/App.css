@@ -48,5 +48,20 @@
     opacity: 1;
   }
 
+  @keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  .animate-moveRightToLeft {
+    animation: moveRightToLeft 5s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+
  
   
