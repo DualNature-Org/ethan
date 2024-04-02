@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Luckiest+Guy&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
 
 *{
-  font-family:Luckiest Guy;
+  font-family:Protest Revolution;
   margin: none;
   padding: none;
   }
@@ -47,5 +47,6 @@
   .video-container iframe.visible {
     opacity: 1;
   }
-  
+
+ 
   

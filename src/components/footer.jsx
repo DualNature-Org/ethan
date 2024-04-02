@@ -30,7 +30,7 @@ function Footer() {
     };
 
     return (
-        <div className="bg-gray-200 flex flex-col">
+        <div className="bg-cover bg-gray-200 flex foot flex-col">
             <div className='container mx-auto py-8 px-4'>
                 <div className='flex flex-col md:flex-row items-center justify-center md:justify-between'>
                     <img src={Logo} alt="logo" className='w-24 h-24 md:w-32 md:h-32 rounded-full mb-8 md:mb-0' />
@@ -76,7 +76,7 @@ function Footer() {
                 </button>
             )}
 
-            <p className='text-xm text-left m-2 pl-2'> © 2024 <a href="https://dualnature.xyz/">DualNature</a> - All Rights Reserved</p>
+            <p className='text-xm  text-left m-2 pl-2'> © 2024 <a href="https://dualnature.xyz/">DualNature</a> - All Rights Reserved</p>
         </div>
     );
 }

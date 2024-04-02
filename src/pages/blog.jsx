@@ -1,6 +1,7 @@
 // src/pages/BlogPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import i1 from '../images/i1.png'
 
 const BlogPage = () => {
   // Dummy blog post data
@@ -28,9 +29,12 @@ const BlogPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Banner */}
-      <div className="bg-[#0B3F67] text-white px-6 py-4 mb-6">
+      <div className="bg-[#0B3F67] text-white flex justify-between items-center flex-wrap px-6 py-4 mb-6">
+        <div>
         <h1 className="text-3xl font-bold">Welcome to Our Blog</h1>
         <p className="text-lg mt-2">Discover the latest insights and stories from Ethan School.</p>
+        </div>
+      <img src={i1} alt="i1" className=' w-[10rem] h-[10rem]' />
       </div>
 
       {/* Blog Posts */}
