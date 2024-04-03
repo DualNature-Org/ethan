@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import i1 from '../images/illustrations/i1.gif';
 import i2 from '../images/illustrations/i2.gif';
 import i4 from '../images/illustrations/i4.gif';
+import i5 from '../images/illustrations/i5.gif';
 // import Banner2 from '../images/student/student2.g';
 import infra1 from '../images/infrastructure/infra1-min.png';
 import infra2 from '../images/infrastructure/infra2-min.png';
@@ -72,33 +73,33 @@ function Main() {
         <div className='p-10 flex justify-center items-center flex-col md:p-32 md: md:flex-row md:justify-center md:items-center'>
           <div className='flex flex-col h-[15rem] w-full md:w-[26rem] md:h-[26rem] mt-10  '>
 
-            <h1 className='font-extrabold text-3xl md:text-6xl flex justify-center items-center'><h1 className='text-10xl pb-4'>l</h1>earning is playing</h1>
+            <h1 className='font-extrabold text-3xl md:text-6xl flex justify-center items-center'><h1 className='text-10xl pb-4'>L</h1>earning is playing</h1>
             <p className='text-2xl mt-10'>In the world of education, the schoolyard is the laboratory where learning through play flourishes</p>
           </div>
           <img src={sliderPhotos[currentSlide]} alt="saa" className='w-full mt-0  md:w-[53rem] h-auto  md: rounded-lg    shadow-2xl' />
         </div>
       </Reveal>
       <div className="w-full h-[25rem] mb-2 overflow-hidden relative   md:hidden">
-      <div className="absolute inset-0 flex items-center animate-moveRightToLeft">
-        <img
-          src={i1}
-          alt='move'
-          className="h-[25rem] w-[25rem] object-cover"
-        />
+        <div className="absolute inset-0 flex items-center animate-moveRightToLeft">
+          <img
+            src={i1}
+            alt='move'
+            className="h-[25rem] w-[25rem] object-cover"
+          />
+        </div>
       </div>
-    </div>
       <div className=' pb-14'>
         <div className='flex justify-center items-center flex-wrap'>
           <div className='flex justify-center '>
-          <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
-            <h1 className='flex justify-center items-center mt-6'><h1 className='text-10xl mb-10 '>O</h1><p className='flex flex-col justify-center items-center'>
-              ur purpose
-              <img src={as1} alt="as1" />
-            </p>
-            </h1>
+            <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
+              <h1 className='flex justify-center items-center mt-6'><h1 className='text-10xl mb-10 '>O</h1><p className='flex flex-col justify-center items-center'>
+                ur purpose
+                <img src={as1} alt="as1" />
+              </p>
+              </h1>
+            </div>
+            <img src={i2} alt="i2" className='w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] lg:w-[16rem] lg:h-[16rem] rounded-full' />
           </div>
-           <img src={i2} alt="i2" className='w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] lg:w-[16rem] lg:h-[16rem] rounded-full' />
-          </div>   
           <div className='flex flex-col justify-center items-start'>
             <h1 className='text-3xl font-bold m-5'>Vision</h1>
             <p className='text-xl text-center shadow-md shadow-[#0B3F67] py-4 px-4 md:text-2xl md:py-8 md:px-8'>A child's human rights are non-negotiable for us.
@@ -118,7 +119,9 @@ function Main() {
           <Grid />
         </JackInTheBox>
       </div>
-  
+      <div className='flex justify-center items-center mt-4 mb-4'>
+        <img src={i5} alt="asdas" />
+      </div>
       <div className='mb-[7rem]   bg-yellow-100 px-4 py-4   mr-2 ml-2'>
         <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
           <h1 className='flex justify-center items-center backdrop-blur-lg'><h1 className='text-9xl mb-7'>I</h1>nfrastructure</h1>
@@ -168,26 +171,27 @@ function Main() {
         <div className='flex justify-center items-center flex-col  m-4 md:m-10 mt-16'>
           <div className='flex justify-center items-center flex-wrap'>
             <div className='flex justify-center'>
-            <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl '>
-              <h1 className='flex justify-center items-center'><h1 className='text-10xl mb-7'>W</h1> <p className='flex flex-col justify-center items-center'>hat people say about us?
-                <img src={as1} alt="as1" />
-
-              </p></h1>
-            </div>
-            <img src={i4} alt="asa" className=' w-[8rem] h-[8rem] md:w-[15rem] md:h-[15rem] lg:w-[18rem] lg:h-[18rem] rounded-full' />
-            </div>
-          
-          </div>
-          <div className='flex justify-around items-center m-4 md:m-20  flex-wrap'>
-            <div className='md:w-[40rem] h-auto md:h-[20rem] flex  justify-center items-center text-center shadow-lg shadow-[#0B3F67]'>
-              <p className='text-lg md:text-2xl m-4'>
-                <strong>{reviews[currentReview].writer}</strong>: {reviews[currentReview].review}
-              </p>
+              <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center md:text-6xl'>
+                <h1 className='flex justify-center items-center'>
+                  <h1 className='text-10xl mb-7'>W</h1>
+                  <p className='flex flex-col justify-center items-center'>What people say about us?
+                    <img src={as1} alt="as1" />
+                  </p>
+                </h1>
+              </div>
+              <img src={i4} alt="asa" className='hidden md:inline-block lg:inline-block w-[8rem] h-[8rem] md:w-[15rem] md:h-[15rem] lg:w-[18rem] lg:h-[18rem] rounded-full' />
             </div>
           </div>
-        </div>
+            <div className='flex justify-around items-center m-4 md:m-20  flex-wrap'>
+              <div className='md:w-[40rem] h-auto md:h-[20rem] flex  justify-center items-center text-center shadow-lg shadow-[#0B3F67]'>
+                <p className='text-lg md:text-2xl m-4'>
+                  <strong>{reviews[currentReview].writer}</strong>: {reviews[currentReview].review}
+                </p>
+              </div>
+            </div>
+          </div>
       </AttentionSeeker>
-  
+
     </div>
   );
 }

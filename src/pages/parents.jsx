@@ -1,5 +1,5 @@
 import React from 'react'
-
+import i6 from '../images/illustrations/i6.gif';
 // import dodont from "../images/dodont.png";
 import P2 from "../images/parent2.jpg";
 // import as1 from "../images/asset1.png";
@@ -15,8 +15,9 @@ function parents() {
           </div>
         </div>
         <div className=' mt-10 flex flex-col justify-center items-center'>
-          <div className='font-bold text-3xl flex flex-col mt-[1.5rem] text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
+          <div className='font-bold text-3xl flex  mt-[1.5rem] text-[#0B3F67] justify-center items-center flex-wrap  md:text-6xl mb-10'>
             <h1 className='flex justify-center items-center'><h1 className='text-10xl mb-7'>D</h1>o's and dont's</h1>
+            <img src={i6} alt="sad" className='w-[20rem] h-[15rem] px-3 py-3' />
           </div>
           <ParentingTipsComponent/>
         </div>
