@@ -20,13 +20,13 @@ const Quote = ({ children }) => (
 const FacultySection = () => {
   // Example faculty data
   const facultyMembers = [
-    { id: 1, name: 'John Doe', role: 'Math Teacher', about: 'She is an enthusiastic and lively teacher who constantly looks to evolve and improve upon her teaching methodology. Her learning is fused with fun, music, art, and play. Children not only learn faster, but remember it for life.' },
-    { id: 2, name: 'Jane Smith', role: 'Science Teacher', about: 'She, very patiently, brings out the best in each child, imaginatively filling fun, hope, and self-belief in the lives of children who may sometimes be lost or unable to cope with the rest.' },
+    { id: 1, name: "Natasha Ma'am", role: 'Math Teacher', about: 'She is an enthusiastic and lively teacher who constantly looks to evolve and improve upon her teaching methodology. Her learning is fused with fun, music, art, and play. Children not only learn faster, but remember it for life.', link: 'https://i.postimg.cc/Y9sjCdfH/Natasha-ma-am.jpg' },
+    { id: 2, name: "Aavanj Ma'am", role: 'Science Teacher', about: 'She, very patiently, brings out the best in each child, imaginatively filling fun, hope, and self-belief in the lives of children who may sometimes be lost or unable to cope with the rest.', link: 'https://i.postimg.cc/yxjQRSxs/Aavanj-ma-am.jpg' },
     // Add more faculty members as needed
   ];
   const principal = {
-    name: "Dr. Maya Patel",
-    image: "/principal_image.jpg", // Replace with actual image URL
+    name: "Miss. Asha Raika",
+    image: "https://i.postimg.cc/j57YyvYK/Asha-raika.jpg", 
   };
 
   return (
@@ -50,7 +50,7 @@ const FacultySection = () => {
                 <div className="mb-8">
                   <img
                     className="rounded-full w-[20rem] h-[20rem] mx-auto mb-4"
-                    src={`https://via.placeholder.com/150?text=${principal.name}`}
+                    src={principal.image}
                     alt="Principal"
                   />
                   <p className="text-xl lg:text-2xl" style={{ textAlign: 'justify', color: 'rgb(4 25 91)' }}>
@@ -60,6 +60,7 @@ const FacultySection = () => {
                   <p className="text-xl lg:text-2xl mt-4" style={{ textAlign: 'justify', color: 'rgb(4 25 91)' }}>
                     Our school values diversity, equity, and inclusion, and we strive to create a welcoming and supportive community for all. We celebrate the unique strengths and backgrounds of each individual and work together to create a positive and inclusive learning environment.
                     As we embark on this journey together, I invite parents, students, and staff to join us in our commitment to excellence. Together, we can inspire greatness, foster creativity, and unlock the potential within each and every student."
+                    <span style={{color: 'gray', fontSize: '1.2rem'}}>- Asha Raika</span>
                   </p>
                 </div>
               </div>
@@ -114,7 +115,7 @@ const FacultySection = () => {
             <Reveal key={faculty.id} triggerOnce>
               <div key={faculty.id} className="bg-white rounded-lg shadow-md p-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                 <div className="flex justify-center mb-4">
-                  <img className="rounded-full w-32 h-32 lg:w-48 lg:h-48" src={`https://via.placeholder.com/150?text=${faculty.name}`} alt={faculty.name} />
+                  <img className="rounded-full w-32 h-32 lg:w-48 lg:h-48" src={faculty.link} alt={faculty.name} />
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-semibold mb-2 text-center">{faculty.name}</h3>
                 <p className="text-xl lg:text-2xl text-gray-700">{faculty.about}</p>

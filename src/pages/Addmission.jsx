@@ -1,30 +1,31 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 // import Banner from "../images/Admissionbanner.png";
 import Callback from "../images/Callback.png";
-import Reveal, { AttentionSeeker, JackInTheBox } from 'react-awesome-reveal';
+import { JackInTheBox } from 'react-awesome-reveal';
+// AttentionSeeker, Reveal
 // import i2 from "../images/i2.png";
 import as1  from "../images/asset1.png";
 import i3  from "../images/i2.png";
 
 function Admission() {
-  const [selectedClass, setSelectedClass] = useState('');
+  // const [selectedClass, setSelectedClass] = useState('');
 
-  const handleOptionChange = (event) => {
-    setSelectedClass(event.target.value);
-  };
+  // const handleOptionChange = (event) => {
+  //   setSelectedClass(event.target.value);
+  // };
 
-  const feeStructure = [
-    { class: 'Nursery', tuitionFee: '5000', admissionFee: '2000', booksFee: '1500', uniformFee: '1000', total: '9500' },
-    { class: 'LKG', tuitionFee: '5500', admissionFee: '2200', booksFee: '1600', uniformFee: '1100', total: '10400' },
-    { class: 'UKG', tuitionFee: '6000', admissionFee: '2500', booksFee: '1700', uniformFee: '1200', total: '11400' },
-    { class: '1st', tuitionFee: '6500', admissionFee: '2800', booksFee: '1800', uniformFee: '1300', total: '12400' },
-    { class: '2nd', tuitionFee: '7000', admissionFee: '3000', booksFee: '1900', uniformFee: '1400', total: '13300' },
-    { class: '3rd', tuitionFee: '7500', admissionFee: '3200', booksFee: '2000', uniformFee: '1500', total: '14200' }
-  ];
+  // const feeStructure = [
+  //   { class: 'Nursery', tuitionFee: '5000', admissionFee: '2000', booksFee: '1500', uniformFee: '1000', total: '9500' },
+  //   { class: 'LKG', tuitionFee: '5500', admissionFee: '2200', booksFee: '1600', uniformFee: '1100', total: '10400' },
+  //   { class: 'UKG', tuitionFee: '6000', admissionFee: '2500', booksFee: '1700', uniformFee: '1200', total: '11400' },
+  //   { class: '1st', tuitionFee: '6500', admissionFee: '2800', booksFee: '1800', uniformFee: '1300', total: '12400' },
+  //   { class: '2nd', tuitionFee: '7000', admissionFee: '3000', booksFee: '1900', uniformFee: '1400', total: '13300' },
+  //   { class: '3rd', tuitionFee: '7500', admissionFee: '3200', booksFee: '2000', uniformFee: '1500', total: '14200' }
+  // ];
 
-  const getFeeData = () => {
-    return feeStructure.find(fee => fee.class === selectedClass);
-  };
+  // const getFeeData = () => {
+  //   return feeStructure.find(fee => fee.class === selectedClass);
+  // };
 
   return (
     <div className='bg-white '>
@@ -62,7 +63,7 @@ function Admission() {
           {/* <img src={i2} alt="isi" className='w-[10rem] h-[10rem]'/> */}
         </div>
       </div>
-      <div>
+      {/* <div>
         <h1 className='text-3xl text-[#0B3F67] flex flex-col justify-center items-center font-bold md:font-bold md:text-5xl text-center mt-5'>Admission Enquiry <img src={as1} alt="asset" /></h1>
         <div className='p-10 '>
           <Reveal triggerOnce>
@@ -77,8 +78,8 @@ function Admission() {
             </form>
           </Reveal>
         </div>
-      </div>
-      {selectedClass && (
+      </div> */}
+      {/* {selectedClass && (
         <AttentionSeeker triggerOnce >
           <div className=''>
             <h1 className='font-bold text-3xl text-center'>Fee Structure for {selectedClass}</h1>
@@ -106,7 +107,7 @@ function Admission() {
             </div>
           </div>
         </AttentionSeeker>
-      )}
+      )} */}
       <div className=' bg-blue-300 rounded-lg w-screen flex flex-col justify-center p-5 items-center md:flex-row justify-around md:w-full'>
         <div className='flex flex-col justify-center items-center'>
           <img src={Callback} className='w-[10rem] h-[10rem] rounded-full md:w-[20rem] md:h-[20rem]' alt='' />

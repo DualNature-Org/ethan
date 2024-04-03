@@ -174,7 +174,7 @@ function Main() {
               <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center md:text-6xl'>
                 <h1 className='flex justify-center items-center'>
                   <h1 className='text-10xl mb-7'>W</h1>
-                  <p className='flex flex-col justify-center items-center'>What people say about us?
+                  <p className='flex flex-col justify-center items-center'>hat people say about us?
                     <img src={as1} alt="as1" />
                   </p>
                 </h1>

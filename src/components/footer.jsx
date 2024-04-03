@@ -76,7 +76,7 @@ function Footer() {
                 </button>
             )}
 
-            <p className='text-xm  text-left m-2 pl-2'> © 2024 <a href="https://dualnature.xyz/">DualNature</a> - All Rights Reserved</p>
+            <p className='text-xm  text-left m-2 pl-2' style={{fontFamily: 'sans-serif'}}> © 2024 <a href="https://dualnature.xyz/" style={{fontFamily: 'sans-serif'}}>DualNature</a> - All Rights Reserved</p>
         </div>
     );
 }

@@ -32,9 +32,9 @@ function YouTubeVideo() {
         className={isVisible ? "visible" : ""}
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/HiwnB2aV7P0?si=dgeKucGCVSGgefmX"  // Replace VIDEO_ID_HERE with the actual YouTube video ID
-        title="YouTube video player"
-        allow="accelerometer;autoplay,clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        src="https://www.youtube.com/embed/J1lNNmudBaw" 
+        title="बच्चों पर ध्यान दिया जाए तो आत्महत्या नहीं करेंगे #viralvideo"
+        allow="accelerometer;autoplay,clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
     </div>
