@@ -34,7 +34,7 @@ function Footer() {
             <div className='container mx-auto py-8 px-4'>
                 <div className='flex flex-col md:flex-row items-center justify-center md:justify-between'>
                     <img src={Logo} alt="logo" className='w-24 h-24 md:w-32 md:h-32 rounded-full mb-8 md:mb-0' />
-                    <h1 style={{color: '#1c1c6b', fontSize: '2rem', fontWeight: '600', fontFamily: 'none'}} className='md:mt-10 xl:m-2'>Ethan School</h1>
+                    <h1 style={{ fontSize: '2rem', fontWeight: '600'}} className='md:mt-10 xl:m-2'>Ethan School</h1>
                     <div className='grid grid-cols-2 mb-8 md:grid-cols-3 gap-4 md:gap-8 md:mb-10 justify-center md:flex flex-col mt-10 lg:mb-0 md:items-center md:mr-[4rem] md:flex-row md:justify-evenly md:ml-auto lg:mr-[7rem]'>
                         <div className='flex justify-center items-center flex-col'>
                             <h1 className='text-xl mb-4  font-semibold cursor-pointer hover:text-[#0B3F67]'><Link to='/gallery'>Gallery</Link></h1>

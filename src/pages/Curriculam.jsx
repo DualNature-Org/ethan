@@ -4,6 +4,7 @@ import philosophy2 from '../images/student/student7.png';
 import philosophy3 from '../images/student/student3.png';
 import philosophy4 from '../images/student/student4.png';
 import as1 from "../images/asset1.png";
+import i3 from '../images/illustrations/i3.gif';
 
 function Curriculam() {
   return (
@@ -13,10 +14,13 @@ function Curriculam() {
           <h1 className='bg-slate-400 text-4xl font-bold bg-opacity-10 md:font-bold md:text-8xl text-center text-blue-500'>Our Curriculum</h1>
         </div>
       </div>
-      <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
+      <div className='flex justify-center'>
+      <div className='font-bold text-3xl flex flex-col mt-12 text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
             <h1 className='flex justify-center items-center'><h1 className='text-10xl mb-7'>E</h1>than school focuses on</h1>
             <img src={as1} alt="as1" />
           </div>
+          <img src={i3} alt="as" className='w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] lg:w-[18rem] lg:h-[18rem]' />
+      </div>
       <div className='flex justify-center items-center flex-col gap-[3rem] m-8'>
         <div className='flex flex-col justify-center items-center  md:flex-row md:gap-[6rem]'>
           <img src={philosophy1} className='w-[13rem] h-[13rem] rounded-full md:w-[15rem] md:h-[15rem] lg:w-[25rem] lg:h-[25rem]' alt="curr" />
