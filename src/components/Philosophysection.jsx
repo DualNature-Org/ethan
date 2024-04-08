@@ -11,8 +11,8 @@ const dummyData = [
   {
     id: 1,
     image: philosophy1,
-    title: "Inculcating Technology",
-    description: "Technology plays a vital role in modern education. We integrate technology seamlessly into our curriculum to enhance learning experiences and prepare students for the future."
+    title: "Screen Free Learning",
+    description: "we promote screen free school, learning by staying close to nature, we promote cognitive development through interactions and physical activities. We foster creativity through imaginative play."
   },
   {
     id: 2,

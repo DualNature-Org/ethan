@@ -32,7 +32,7 @@ function Admission() {
       <div className='w-screen h-[22rem]  bg-Adbanner bg-cover md:h-[30rem]  flex justify-center items-center lg:h-[33rem] md:w-full'>
         <div className=' bg-slate-300  bg-opacity-85 p-3'>
           <h1 className='text-4xl mb-2 font-bold md:font-bold md:text-8xl text-center text-blue-600'>Admissions Open</h1>
-          <h1 className='text-4xl  md:font-bold md:text-8xl text-center text-white'>2023-2024</h1>
+          <h1 className='text-4xl  md:font-bold md:text-8xl text-center text-white'>2024-2025</h1>
         </div>
 
       </div>

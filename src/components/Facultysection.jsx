@@ -22,6 +22,7 @@ const FacultySection = () => {
   const facultyMembers = [
     { id: 1, name: "Natasha Ma'am", role: 'Math Teacher', about: 'She is an enthusiastic and lively teacher who constantly looks to evolve and improve upon her teaching methodology. Her learning is fused with fun, music, art, and play. Children not only learn faster, but remember it for life.', link: 'https://i.postimg.cc/Y9sjCdfH/Natasha-ma-am.jpg' },
     { id: 2, name: "Aavanj Ma'am", role: 'Science Teacher', about: 'She, very patiently, brings out the best in each child, imaginatively filling fun, hope, and self-belief in the lives of children who may sometimes be lost or unable to cope with the rest.', link: 'https://i.postimg.cc/yxjQRSxs/Aavanj-ma-am.jpg' },
+    { id: 2, name: "Vishak Sir", role: 'English Teacher', about: 'He is a passionate educator who instills a love for English in his students through engaging storytelling and thought-provoking discussions. With his dynamic teaching style, he encourages critical thinking and fosters a deeper understanding of the past.', link: 'https://ibb.co/7YcSMvq' },
     // Add more faculty members as needed
   ];
   const principal = {

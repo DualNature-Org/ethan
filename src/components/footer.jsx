@@ -55,12 +55,12 @@ function Footer() {
 
                     <div className='md:ml-12'>
                         <h1 className='text-2xl font-semibold mb-4 text-[#0B3F67] md:text-3xl'>Contact us</h1>
-                        <p className='text-xl font-medium flex items-center mb-4'><CiPhone className='w-6 h-6 mr-2' />+91-9610002304</p>
+                        <p className='text-xl font-medium flex items-center mb-4'><CiPhone className='w-6 h-6 mr-2' />+91-7690915445</p>
                         <p className='text-xl font-medium flex items-center mb-4'><CiHome className='w-6 h-6 mr-2' /> Ward no 5, Jeet nagar, Jhunjhunu</p>
                         <div className='flex justify-start items-center flex-wrap'>
-                            <CiFacebook className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white mr-4 hover:animate-bounce' />
+                            <a href="https://www.facebook.com/profile.php?id=61555879480303&mibextid=LQQJ4d"><CiFacebook className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white mr-4 hover:animate-bounce' /></a>
                             <CiYoutube className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white mr-4 hover:animate-bounce' />
-                            <CiInstagram className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white hover:animate-bounce' />
+                            <a href="https://www.instagram.com/ethaneducation.9?igsh=MWxsaTFnZnVyejM0cQ%3D%3D&utm_source=qr"><CiInstagram className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white hover:animate-bounce' /></a>
                             <CiTwitter className='w-12 h-12 md:w-[3rem] md:h-[3rem] p-1 rounded-full bg-[#0B3F67] text-white ml-4 hover:animate-bounce' />
                         </div>
                     </div>
