@@ -93,7 +93,7 @@ function Main() {
           <div className='flex justify-center '>
             <div className='font-bold text-3xl flex flex-col text-[#0B3F67] justify-center items-center  md:text-6xl mb-10'>
               <h1 className='flex justify-center items-center mt-6'><h1 className='text-10xl mb-10 '>O</h1><p className='flex flex-col justify-center items-center'>
-                ur purpose
+                ur Purpose
                 <img src={as1} alt="as1" />
               </p>
               </h1>
